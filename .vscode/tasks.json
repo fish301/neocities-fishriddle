@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Lint all",
+      "type": "npm",
+      "script": "lint",
+      "problemMatcher": [
+        "$stylelint",
+        "$eslint-compact"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Lint HTML",
+      "type": "npm",
+      "script": "lint:html",
+      "problemMatcher": "$eslint-compact"
+    },
+    {
+      "label": "Lint CSS",
+      "type": "npm",
+      "script": "lint:css",
+      "problemMatcher": "$stylelint"
+    }
+  ]
+}
