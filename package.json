@@ -1,0 +1,22 @@
+{
+  "name": "fishriddle",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "lint": "npm run lint:html && npm run lint:css",
+    "lint:html": "html-validate src/**/*.html",
+    "lint:css": "stylelint src/**/*.css"
+  },
+  "lint-staged": {
+    "**/*.html": "html-validate",
+    "**/*.css": "stylelint"
+  },
+  "devDependencies": {
+    "html-validate": "^11.5.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
+    "stylelint": "^17.13.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}

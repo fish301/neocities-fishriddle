@@ -15,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # The checkout step copies your repo into the action runner. Important!
     - uses: actions/checkout@v7
 
     - name: Deploy to neocities
@@ -23,5 +22,5 @@ jobs:
       with:
         api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
         cleanup: true
-        neocities_supporter: false # set this to true if you have a supporter account and want to bypass unsuported files filter.
-        dist_dir: .
+        neocities_supporter: false
+        dist_dir: src
