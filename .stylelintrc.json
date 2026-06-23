@@ -1,3 +1,18 @@
 {
-  "extends": "stylelint-config-standard"
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "alpha-value-notation": "number",
+    "color-function-notation": "modern",
+    "color-named": "never",
+    "declaration-no-important": true,
+    "font-weight-notation": "numeric",
+    "hue-degree-notation": "number",
+    "import-notation": "string",
+    "length-zero-no-unit": true,
+    "no-descending-specificity": true,
+    "number-max-precision": 3,
+    "selector-max-id": 0,
+    "shorthand-property-no-redundant-values": true,
+    "time-min-milliseconds": 100
+  }
 }

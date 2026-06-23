@@ -1,6 +1,6 @@
 body {
   background-image: url("assets/imgs/index/index.jpg");
-  color: black;
+  color: #000;
   font-family: "MS Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   margin: 0;
@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  color: white;
+  color: #fff;
 }
 
 
@@ -24,11 +24,11 @@ h1 {
 
 
 a {
-  color: blue;
+  color: #00f;
 }
 
 a:hover {
-  color: white;
+  color: #fff;
 }
 
 a:visited {
