@@ -24,6 +24,14 @@ div {
   align-items: center;
 }
 
+.vstack {
+  flex-direction: column;
+}
+
+.text-black {
+  color: black;
+}
+
 
 
   
