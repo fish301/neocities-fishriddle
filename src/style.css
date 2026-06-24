@@ -2,7 +2,7 @@ body {
   background-image: url("assets/imgs/index/index.jpg");
   color: #000;
   @font-face: "Fpnt-Name" url("/assets/fonts/lexend.ttf"); body{font-family:"lexend"}
-  font-size: 20px;
+  font-size: 24px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
