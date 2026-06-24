@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Not Found</title>
-  <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <style>
+        /* Simple, clean styling for regular 404 errors */
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <script>
+        // 1. Get the exact path the user typed in the URL bar
+        const currentPath = window.location.pathname;
+
+        // 2. Check if they typed your specific file name
+        // (This matches "/x.wav" or "yoursite.neocities.org/x.wav")
+        if (currentPath === '/x.wav' || currentPath.endsWith('/x.wav')) {
+            
+            // 3. REPLACE THE LINK BELOW WITH YOUR ACTUAL GOOGLE DRIVE LINK
+            const googleDriveLink = "https://drive.google.com/file/d/1nFd4l5LYC6cdqKpcKNr8BvfbU9H2YzCi/view?usp=drive_link";
+            
+            // 4. Instantly send them to Google Drive
+            window.location.replace(googleDriveLink);
+        }
+    </script>
 </head>
-
 <body>
-  <main>
-    <h1>Page Not Found</h1>
-    <p>The requested page was not found</p>
-  </main>
-</body>
 
+    <div class="container">
+        <h1>404 - Page Not Found</h1>
+        <p>Sorry, the page or file you are looking for doesn't exist.</p>
+        <p><a href="/">Click here to return to the homepage</a></p>
+    </div>
+
+</body>
 </html>
